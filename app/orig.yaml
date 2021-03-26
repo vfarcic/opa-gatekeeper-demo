@@ -28,13 +28,6 @@ spec:
           httpGet:
             path: /
             port: 80
-        # resources:
-        #   requests:
-        #     cpu: 250m
-        #     memory: 256Mi
-        #   limits:
-        #     cpu: 10000m
-        #     memory: 10Gi
 
 ---
 
@@ -45,7 +38,6 @@ metadata:
   labels:
     app: devops-toolkit
 spec:
-  # type: ClusterIP
   type: NodePort
   ports:
   - port: 80
